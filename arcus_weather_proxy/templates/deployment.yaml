@@ -28,7 +28,7 @@ spec:
       name: weather-proxy
     spec:
       containers:
-      - image: {{image}}
+      - image: {{ .Values.image.repository }}
         imagePullPolicy: IfNotPresent
         name: weather-proxy
         ports:
